@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>블로그 – 강남 셔츠룸보다 힙한 마포 카페의 모든 것</title>
+    <meta name="description" content="마포 힙플레이스 카페 강남 셔츠룸 – 거친 브루탈리즘 감성, 강렬한 커피, 색다른 분위기. 규칙을 부수는 공간. 지금 전화 010-6279-0862">
+    <meta name="keywords" content="강남 셔츠룸, 마포 카페, 힙플레이스, 브루탈리즘 카페, 마포 핫플레이스, 블로그">
+    <link rel="canonical" href="https://sf-t3-1779642675702-456.pages.dev/sf-t3-1779642675702-456/blog">
+    <!-- Open Graph -->
+    <meta property="og:title" content="블로그 – 마포 힙플레이스 카페 vs 강남 셔츠룸">
+    <meta property="og:description" content="마포 힙플레이스 카페가 강남 셔츠룸보다 진짜 힙한 이유. 거친 브루탈리즘 감성, 강렬한 커피, 색다른 분위기. 규칙을 부수는 공간. 지금 전화 010-6279-0862">
+    <meta property="og:url" content="https://sf-t3-1779642675702-456.pages.dev/sf-t3-1779642675702-456/blog">
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #f0f0f0;
+            line-height: 1.6;
+            padding: 0 1rem;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 {
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        h1 {
+            font-size: 3rem;
+            border-bottom: 4px solid #ff00ff;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 2.2rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            border-left: 6px solid #00ffff;
+            padding-left: 0.8rem;
+        }
+        h3 {
+            font-size: 1.6rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+        p, li {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #cccccc;
+        }
+        a {
+            color: #ff00ff;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border 0.2s;
+        }
+        a:hover {
+            border-bottom: 2px solid #ff00ff;
+        }
+
+        /* LAYOUT */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        section, header, footer {
+            padding: 2rem 0;
+        }
+        section:last-of-type {
+            padding-bottom: 4rem;
+        }
+        header {
+            border-bottom: 4px solid #ff00ff;
+            margin-bottom: 2rem;
+        }
+
+        /* NAVIGATION */
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .nav-list a {
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 2px solid transparent;
+            padding: 0.3rem 0.6rem;
+        }
+        .nav-list a:hover,
+        .nav-list a.active {
+            border: 2px solid #00ffff;
+            background-color: rgba(0, 255, 255, 0.1);
+        }
+        .hamburger-menu {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: 2px solid #ff00ff;
+            color: #ff00ff;
+            font-size: 1.8rem;
+            padding: 0.3rem 0.8rem;
+            margin-left: auto;
+        }
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #1a1a1a;
+                padding: 1rem;
+                border: 2px solid #ff00ff;
+            }
+            .nav-list.open {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+        }
+
+        /* TEL LINK */
+        .tel-link {
+            display: inline-block;
+            background-color: #ff00ff;
+            color: #0d0d0d;
+            font-weight: 900;
+            padding: 0.5rem 1.2rem;
+            border: 2px solid #ff00ff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-left: auto;
+        }
+        .tel-link:hover {
+            background-color: transparent;
+            color: #ff00ff;
+            border: 2px solid #ff00ff;
+        }
+
+        /* ARTICLE / BLOG */
+        article {
+            border: 3px dashed #00ffff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            background-color: #111111;
+        }
+        article header {
+            border-bottom: 2px solid #ff00ff;
+            margin-bottom: 1.5rem;
+        }
+        article .meta {
+            font-size: 0.9rem;
+            color: #888888;
+            margin-bottom: 1rem;
+        }
+        blockquote {
+            border-left: 6px solid #ff00ff;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #bbbbbb;
+        }
+        .featured-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #2a2a2a, #0d0d0d);
+            border: 2px solid #00ffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #00ffff;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 4px solid #ff00ff;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* RESPONSIVE-768 */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            h3
+</body>
+</html>

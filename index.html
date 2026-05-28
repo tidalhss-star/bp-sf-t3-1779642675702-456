@@ -1,213 +1,407 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>힙플레이스 카페 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #FCFBF7;
-      --charcoal-fg: #1E1B18;
-      --gold-accent: #b8976f;
-      --hairline-color: #e5e2db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>강남 셔츠룸 | 마포 힙플레이스 카페</title>
+    <meta name="description" content="마포 힙플레이스 카페 강남 셔츠룸 – 거친 브루탈리즘 감성, 강렬한 커피, 색다른 분위기. 규칙을 부수는 공간. 지금 전화 010-6279-0862">
+    <meta name="keywords" content="강남 셔츠룸, 마포 카페, 힙플레이스, 브루탈리즘 카페, 마포 핫플레이스">
+    <link rel="canonical" href="https://sf-t3-1779642675702-456.pages.dev/sf-t3-1779642675702-456">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="강남 셔츠룸 | 마포 힙플레이스 카페">
+    <meta property="og:description" content="마포 힙플레이스 카페 강남 셔츠룸 – 거친 브루탈리즘 감성, 강렬한 커피, 색다른 분위기. 규칙을 부수는 공간.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-456.pages.dev/sf-t3-1779642675702-456">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="강남 셔츠룸 | 마포 힙플레이스 카페">
+    <meta name="twitter:description" content="마포 힙플레이스 카페 강남 셔츠룸 – 거친 브루탈리즘 감성, 강렬한 커피, 색다른 분위기.">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Cafe",
+        "name": "강남 셔츠룸",
+        "description": "마포 힙플레이스 카페. 브루탈리즘 인테리어와 강렬한 커피. 강남 셔츠룸 정신을 담은 공간.",
+        "telephone": "010-6279-0862",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "마포",
+            "addressCountry": "KR"
+        },
+        "url": "https://sf-t3-1779642675702-456.pages.dev/sf-t3-1779642675702-456"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Impact', 'Arial Black', 'Courier New', monospace, sans-serif;
+            line-height: 1.2;
+            padding: 72px;
+            padding-top: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+            text-transform: uppercase;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 { font-weight: normal; letter-spacing: -0.02em; }
+        h1 { font-size: clamp(3rem, 12vw, 6rem); line-height: 0.9; margin: 0; }
+        h2 { font-size: clamp(2rem, 8vw, 4rem); margin: 0; }
+        h3 { font-size: 1.8rem; }
+        p, li { font-family: 'Courier New', monospace; font-size: 1.2rem; line-height: 1.4; text-transform: uppercase; letter-spacing: 0.05em; }
+        a { color: #fff; text-decoration: none; }
+        a:hover { color: #ff3b00; }
+
+        /* LAYOUT */
+        .container {
+            max-width: none;
+            padding: 0;
+            margin: 0 -72px; /* full bleed */
+        }
+        section, header, footer {
+            padding: 72px;
+            margin-bottom: 120px;
+            position: relative;
+        }
+        section:last-of-type { margin-bottom: 0; }
+        header { padding-top: 0; margin-bottom: 0; }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #ff3b00;
+            padding-bottom: 24px;
+            margin-bottom: 40px;
+            background: #000;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff3b00;
+            letter-spacing: -0.05em;
+            transform: skew(-5deg);
+        }
+        .logo span { color: #fff; }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 48px;
+            font-size: 1.4rem;
+        }
+        nav a {
+            padding: 8px 16px;
+            border: 4px solid transparent;
+            transition: 0.15s;
+        }
+        nav a:hover {
+            border-color: #ff3b00;
+            color: #ff3b00;
+            transform: rotate(-1deg);
+        }
+
+        /* HAMBURGER (모바일) */
+        .hamburger-checkbox { display: none; }
+        .hamburger-label {
+            display: none;
+            font-size: 2.5rem;
+            cursor: pointer;
+            color: #ff3b00;
+            user-select: none;
+        }
+
+        /* HERO */
+        .hero {
+            background: #000;
+            border: 6px solid #ff3b00;
+            padding: 72px;
+            margin-left: -72px;
+            margin-right: -72px;
+            transform: skew(-2deg);
+            position: relative;
+            overflow: hidden;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,59,0,0.05) 20px, rgba(255,59,0,0.05) 40px);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .hero h1 {
+            position: relative;
+            z-index: 1;
+            font-size: clamp(3.5rem, 15vw, 8rem);
+            line-height: 0.85;
+            color: #fff;
+            text-shadow: 6px 6px 0 #ff3b00, 12px 12px 0 rgba(0,0,0,0.8);
+            transform: rotate(-1deg);
+        }
+        .hero p {
+            position: relative;
+            z-index: 1;
+            font-size: 1.6rem;
+            max-width: 700px;
+            margin-top: 24px;
+            background: #ff3b00;
+            color: #000;
+            padding: 16px 24px;
+            display: inline-block;
+            font-weight: bold;
+            transform: skew(2deg);
+        }
+        .hero .highlight {
+            border: 4px solid #fff;
+            padding: 8px 16px;
+            display: inline-block;
+            margin-top: 32px;
+            font-size: 1.4rem;
+        }
+
+        /* ABOUT */
+        .about {
+            background: #fff;
+            color: #000;
+            border: 4px solid #ff3b00;
+            padding: 72px;
+            transform: rotate(0.5deg);
+            margin-top: 40px;
+        }
+        .about h2 {
+            font-size: 3.5rem;
+            margin-bottom: 48px;
+            border-left: 12px solid #ff3b00;
+            padding-left: 24px;
+            transform: skew(-4deg);
+        }
+        .about p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin-bottom: 32px;
+        }
+
+        /* REVIEWS */
+        .reviews {
+            background: #000;
+            border: 4px solid #ff3b00;
+            padding: 72px;
+            transform: skew(1deg);
+            margin-top: 40px;
+        }
+        .reviews h2 {
+            color: #ff3b00;
+            margin-bottom: 72px;
+            font-size: 3rem;
+            transform: skew(-3deg);
+        }
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 48px;
+        }
+        .review-card {
+            background: #111;
+            border: 4px solid #ff3b00;
+            padding: 32px;
+            transform: rotate(-0.5deg);
+            transition: 0.2s;
+        }
+        .review-card:hover {
+            background: #ff3b00;
+            color: #000;
+            transform: rotate(0.5deg) scale(1.02);
+        }
+        .review-card:hover .stars { color: #000; }
+        .review-card .author {
+            font-family: 'Courier New', monospace;
+            font-size: 1.1rem;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid #ff3b00;
+            padding-bottom: 8px;
+        }
+        .review-card .stars {
+            color: #ff3b00;
+            font-size: 1.5rem;
+            letter-spacing: 4px;
+        }
+        .review-card blockquote {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            margin-top: 16px;
+            line-height: 1.5;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            border-top: 4px solid #ff3b00;
+            padding: 72px;
+            margin-top: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer .phone {
+            font-size: 2rem;
+            color: #ff3b00;
+            border: 4px solid #ff3b00;
+            padding: 12px 24px;
+            transform: skew(-3deg);
+        }
+        footer .copyright {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            color: #888;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            body {
+                padding: 24px;
+            }
+            section, header, footer {
+                padding: 32px 24px;
+                margin-bottom: 80px;
+            }
+            .container { margin: 0 -24px; }
+            .hero {
+                margin-left: -24px;
+                margin-right: -24px;
+                padding: 48px 24px;
+                transform: skew(-1deg);
+                min-height: 60vh;
+            }
+            .hero h1 {
+                font-size: clamp(2.5rem, 12vw, 4.5rem);
+                text-shadow: 4px 4px 0 #ff3b00;
+            }
+            .hero p { font-size: 1.2rem; }
+            .about, .reviews {
+                padding: 32px 24px;
+                transform: none;
+            }
+            .about h2 { font-size: 2.2rem; padding-left: 16px; }
+            .review-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            footer {
+                flex-direction: column;
+                gap: 32px;
+                text-align: center;
+            }
+            footer .phone { font-size: 1.5rem; }
+
+            /* HAMBURGER 활성화 */
+            .hamburger-label {
+                display: block;
+                position: relative;
+                z-index: 100;
+            }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background: #000;
+                border: 4px solid #ff3b00;
+                position: absolute;
+                top: 72px;
+                right: 24px;
+                padding: 32px;
+                gap: 32px;
+                min-width: 200px;
+                z-index: 99;
+            }
+            #hamburger:checked + .hamburger-label + nav ul {
+                display: flex;
+            }
+            /* label이 바로 뒤에 오지 않아서 selector 조정 */
+            .hamburger-checkbox:checked ~ nav ul {
+                display: flex;
+            }
+            /* 실제 구조에 맞게 */
+            header nav ul { display: none; }
+            #hamburger:checked ~ .site-nav ul {
+                display: flex;
+            }
+            /* 유연하게 */
+            .menu-toggle { display: block; }
+            .site-nav ul { display: none; }
+            .menu-toggle:checked ~ .site-nav ul { display: flex; }
+        }
+
+        /* UTILITY */
+        .skew-left { transform: skew(-4deg); }
+        .skew-right { transform: skew(3deg); }
+        .border-accent { border: 4px solid #ff3b00; }
+        .bg-accent { background: #ff3b00; color: #000; }
+        .text-accent { color: #ff3b00; }
+        .full-bleed { margin-left: -72px; margin-right: -72px; }
+        @media (max-width:768px) { .full-bleed { margin-left: -24px; margin-right: -24px; } }
+
+        /* 추가 raw texture (브루탈리즘) */
+        .noise-bg {
+            background-image: repeating-radial-gradient(circle at 10% 20%, transparent 0, transparent 5px, rgba(255,59,0,0.03) 5px, rgba(255,59,0,0.03) 10px);
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">EDITORIAL.T3</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE T3 / ACCENT HAIRLINES</div>
-      <h1>힙플레이스 카페 리서치 및 기술 인프라 저널</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>힙플레이스 카페</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>힙플레이스 카페: 라이프스타일: 일상 최적화 가이드</h3>
-          <p>바쁘게 흘러가는 도심 라이프 속에서 나만의 시간적 여유와 쾌적한 데일리 습관을 디자인하는 것은 삶의 질을 극대화하는 가장 첫 번째 과제입니다. 미니멀한 마인드와 루틴 설계는 큰 힘...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>힙플레이스 카페: 라이프스타일: 공간 미학과 정리 정돈</h3>
-          <p>가구 배치와 조명 연출 하나만으로 평범한 방을 아늑한 아지트로 변모시키는 공간 정리 팁은 내 멘탈 에너지를 가득 채워주는 보이지 않는 강력한 힘을 발휘하는 일상 속 예술입니다....</p>
-        </a>
-      
+<!-- HEADER -->
+<header>
+    <div class="logo"><span>☠️</span> 강남<span>셔츠룸</span></div>
+    <input type="checkbox" id="hamburger" class="hamburger-checkbox">
+    <label for="hamburger" class="hamburger-label">☰</label>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="#about">🔻 about</a></li>
+            <li><a href="#reviews">💬 reviews</a></li>
+            <li><a href="tel:010-6279-0862">📞 call</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>힙플레이스 카페: 라이프스타일: 디지털 디톡스와 아날로그 쉼표</h3>
-          <p>끊임없이 쏟아지는 푸시 알림과 스마트폰의 피로로부터 온전히 격리된 채, 하루에 단 30분씩이라도 책을 읽거나 명상을 즐기는 아날로그 디톡스 루틴은 정신 건강을 지키는 든든한 방패입...</p>
-        </a>
-      
+<main>
 
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>라이프스타일 에디터가 강력 추천하는 강남 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
+    <!-- HERO -->
+    <section class="hero full-bleed">
+        <h1>RULE<br>BREAKER</h1>
+        <p>마포 힙플레이스 · 강남 셔츠룸 정신</p>
+        <div class="highlight">☕🔥 예약은 전화로 ▶ 010-6279-0862</div>
+    </section>
 
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>라이프스타일 에디터가 강력 추천하는 강남 셔츠룸 알짜 가이드</h3>
-          <p>복잡하고 정신없이 굴러가는 하루 일상 속에서 나만의 아날로그 감성과 행복한 쉼표를 기획하는 세련된 에디터분들이라면, 삶의 질을 높여주는 오프라인 휴식 공간의 정보와 최적의 혜택을 ...</p>
-        </a>
-      
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.T3. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
-    </footer>
-  </div>
+    <!-- ABOUT -->
+    <section class="about full-bleed" id="about">
+        <h2>너, 카페 좀 아냐?</h2>
+        <p>
+            여긴 평범한 카페가 아니야. 브루탈리즘 건축, 강렬한 커피, 그리고 '강남 셔츠룸'의 거침없는 에너지.<br>
+            우리는 모든 규칙을 부순다. 부드러운 그라데이션? 없어. 둥근 모서리? 없어.<br>
+            오직 날 것의 감각, 날카로운 맛, 그리고 너를 깨우는 공간.
+        </p>
+        <p style="font-size:1.6rem; margin-top:48
 </body>
 </html>

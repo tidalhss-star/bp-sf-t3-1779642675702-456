@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[마포 강남 셔츠룸]]></title>
-  <link>https://sf-t3-1779642675702-456.pages.dev</link>
-  <description><![CDATA[마포 힙플레이스 카페 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 13:30:50 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 13:30:50 GMT</lastBuildDate>
-  <atom:link href="https://sf-t3-1779642675702-456.pages.dev/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[힙플레이스 카페]]></title>
+  <link>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-456</link>
+  <description><![CDATA[힙플레이스 카페 - 강남 셔츠룸 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 19:54:28 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 19:54:28 GMT</lastBuildDate>
+  <atom:link href="https://tidalhss-star.github.io/bp-sf-t3-1779642675702-456/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[마포 강남 셔츠룸 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://sf-t3-1779642675702-456.pages.dev/</link>
-      <guid isPermaLink="true">https://sf-t3-1779642675702-456.pages.dev/</guid>
-      <description><![CDATA[마포 힙플레이스 카페 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 13:30:50 GMT</pubDate>
+      <title><![CDATA[착륙, 강남 셔츠룸 업주에게 물어본 폐업과 살아남은 진실]]></title>
+      <link>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-456/posts/interview-002-708a9b.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-sf-t3-1779642675702-456/posts/interview-002-708a9b.html</guid>
+      <description><![CDATA[### 포스트 DNA 4023f91e제목: 착륙, 강남 셔츠룸 업주에게 물어본 폐업과 살아남은 진실 아, 진짜... 홍대 상권에서 폐업한 업소들이 공통적으로 원인을 찾아봤다. 그럼 살아남은 곳들의 차별화 전략에 대해 살펴볼까? #### ## 강남 셔츠룸 폐업 원인 분석]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[강남 셔츠룸에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
+      <link>https://tidalhss-star.github.io/bp-sf-t3-1779642675702-456/posts/myth-001-708a9b.html</link>
+      <guid isPermaLink="true">https://tidalhss-star.github.io/bp-sf-t3-1779642675702-456/posts/myth-001-708a9b.html</guid>
+      <description><![CDATA[### 포스트 DNA 9889b0fd #### 제목: 창작한 제목 “MK울트라 프로젝트의 미스터리 서브프로젝트 코드명 분석: 음모론과 실제 사건 사이” 아, 진짜... MK울트라는 CIA 비밀 프로젝트였다. 하지만 파나마 페이퍼를 통해 밝혀진 것은 그보다 더 깊은 과거]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
